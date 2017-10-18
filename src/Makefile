@@ -177,6 +177,17 @@ SRCDIRS		+=	external/lua-5.3.4
 INCDIRS		+= 	external/lua-cjson-2.1.0
 SRCDIRS		+=	external/lua-cjson-2.1.0
 
+INCDIRS		+= 	external/lwip-2.0.3/include \
+				external/lwip-2.0.3/ports/include
+SRCDIRS		+=	external/lwip-2.0.3/api \
+				external/lwip-2.0.3/core \
+				external/lwip-2.0.3/core/ipv4 \
+				external/lwip-2.0.3/core/ipv6 \
+				external/lwip-2.0.3/netif \
+				external/lwip-2.0.3/netif/ppp \
+				external/lwip-2.0.3/netif/ppp/polarssl \
+				external/lwip-2.0.3/ports
+
 INCDIRS		+= 	external/pixman-0.34.0 \
 				external/pixman-0.34.0/$(ARCH)
 SRCDIRS		+=	external/pixman-0.34.0 \
