@@ -15,10 +15,10 @@
 
 
 #define MAX_MMC_NUM			4
-#define MMC_TRANS_BY_DMA
+//#define MMC_TRANS_BY_DMA
 
 #define MMC_REG_BASE		0x01c0f000
-#define MMC_REG_FIFO_OS		(0x100)
+#define MMC_REG_FIFO_OS		(0x200)
 #define CCMU_HCLKGATE0_BASE 	0x01c20060
 
 #define CCMU_MMC0_CLK_BASE 	0x01c20088
