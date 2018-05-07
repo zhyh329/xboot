@@ -28,6 +28,48 @@
 #include <reset/reset.h>
 #include <sd/sdhci.h>
 
+enum {
+	SD_GCTL			= 0x00,
+	SD_CKCR			= 0x04,
+	SD_TMOR			= 0x08,
+	SD_BWDR			= 0x0c,
+	SD_BKSR			= 0x10,
+	SD_BYCR			= 0x14,
+	SD_CMDR			= 0x18,
+	SD_CAGR			= 0x1c,
+	SD_RESP0		= 0x20,
+	SD_RESP1		= 0x24,
+	SD_RESP2		= 0x28,
+	SD_RESP3		= 0x2c,
+	SD_IMKR			= 0x30,
+	SD_MISR			= 0x34,
+	SD_RISR			= 0x38,
+	SD_STAR			= 0x3c,
+	SD_FWLR			= 0x40,
+	SD_FUNS			= 0x44,
+	SD_A12A			= 0x58,
+	SD_NTSR			= 0x5c,
+	SD_SDBG			= 0x60,
+	SD_HWRST		= 0x78,
+	SD_DMAC			= 0x80,
+	SD_DLBA			= 0x84,
+	SD_IDST			= 0x88,
+	SD_IDIE			= 0x8c,
+	SD_THLDC		= 0x100,
+	SD_DSBD			= 0x10c,
+	SD_RES_CRC		= 0x110,
+	SD_DATA7_CRC	= 0x114,
+	SD_DATA6_CRC	= 0x118,
+	SD_DATA5_CRC	= 0x11c,
+	SD_DATA4_CRC	= 0x120,
+	SD_DATA3_CRC	= 0x124,
+	SD_DATA2_CRC	= 0x128,
+	SD_DATA1_CRC	= 0x12c,
+	SD_DATA0_CRC	= 0x130,
+	SD_CRC_STA		= 0x134,
+	SD_FIFO			= 0x200,
+};
+
 struct sdhci_v3s_pdata_t {
 	virtual_addr_t virt;
 	char * pclk;
