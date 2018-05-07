@@ -12,8 +12,8 @@ MCFLAGS		:= -march=armv7-a -mtune=cortex-a7 -mfpu=vfpv4 -mfloat-abi=hard -marm -
 
 LIBDIRS		:=
 LIBS 		:=
-INCDIRS		:=
-SRCDIRS		:=
+INCDIRS		:= arch/$(ARCH)/$(MACH)/include/sd
+SRCDIRS		:= arch/$(ARCH)/$(MACH)/sd
 
 ifeq ($(strip $(HOSTOS)), linux)
 MKSUNXI		:= arch/$(ARCH)/$(MACH)/tools/linux/mksunxi
